@@ -1,3 +1,5 @@
+import { link } from "fs";
+
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
@@ -49,7 +51,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
+    title: "Currently Adding to my Skillset",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -72,96 +74,77 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    title: "FigFinancial",
+    des: "Need to track your expenses and calculate your loan? This app is for you! Built with C# ASP.Net Core",
+    img: "/fig-financial.png",
+    iconLists: [],
+    href: "https://fig-finance.up.railway.app/",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    title: "FigueroaCrafts",
+    des: "Figueroa Crafts is a sample application that was created to help how the fundamental concepts behind creating a application with ASP.NET and deploying it to Azure App Services.",
+    img: "/figcraft.png",
+    iconLists: [],
+    href: "https://figueroacrafts.azurewebsites.net/",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
-  },
-  {
-    id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    title: "Code Bootcamp Portfolio",
+    des: "A portfolio website for a coding bootcamp, built with SCSS, Bootstrap5 and Vanilla JS.",
+    img: "/portfolio.png",
+    iconLists: [],
+    href: "https://fig369.github.io/",
   },
 ];
 
 export const testimonials = [
   {
     quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
-  {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
-  },
+      "I had the privilege of working closely with Jay during my time at Ocozzio, and I can wholeheartedly recommend him as an exceptional colleague. We shared the same responsibilities as Frontend Developers, and our ability to effectively communicate and adopt each other's feedback significantly enhanced our productivity and quality of work. I especially appreciate Jay's unwavering support when I proposed and implemented improvements to our build systems and workflows. His contributions and insights were invaluable to both my growth and the success of our projects. Jay is a talented and forward-thinking web developer who excels in teamwork and mentoring, making significant contributions to both my growth and the success of our projects. His ability to effectively communicate, adopt feedback, and support improvements to our workflows has been instrumental in our shared achievements. Jay is an invaluable asset to any team fortunate enough to have him.",
+    name: "Orion Palmer",
+    title: "Software Developer & A.I. Whisperer",
+    image: "/orion.jpg",
+  }
+  // {
+  //   quote:
+  //     "I had the privilege of working closely with Jay during my time at Ocozzio, and I can wholeheartedly recommend him as an exceptional colleague. We shared the same responsibilities as Frontend Developers, and our ability to effectively communicate and adopt each other's feedback significantly enhanced our productivity and quality of work. I especially appreciate Jay's unwavering support when I proposed and implemented improvements to our build systems and workflows. His contributions and insights were invaluable to both my growth and the success of our projects. Jay is a talented and forward-thinking web developer who excels in teamwork and mentoring, making significant contributions to both my growth and the success of our projects. His ability to effectively communicate, adopt feedback, and support improvements to our workflows has been instrumental in our shared achievements. Jay is an invaluable asset to any team fortunate enough to have him.",
+  //   name: "Orion Palmer",
+  //   title: "Software Developer & A.I. Whisperer",
+  // },
+  // {
+  //   quote:
+  //     "I had the privilege of working closely with Jay during my time at Ocozzio, and I can wholeheartedly recommend him as an exceptional colleague. We shared the same responsibilities as Frontend Developers, and our ability to effectively communicate and adopt each other's feedback significantly enhanced our productivity and quality of work. I especially appreciate Jay's unwavering support when I proposed and implemented improvements to our build systems and workflows. His contributions and insights were invaluable to both my growth and the success of our projects. Jay is a talented and forward-thinking web developer who excels in teamwork and mentoring, making significant contributions to both my growth and the success of our projects. His ability to effectively communicate, adopt feedback, and support improvements to our workflows has been instrumental in our shared achievements. Jay is an invaluable asset to any team fortunate enough to have him.",
+  //   name: "Orion Palmer",
+  //   title: "Software Developer & A.I. Whisperer",
+  // },
 ];
 
 export const companies = [
-  {
-    id: 1,
-    name: "cloudinary",
-    img: "/cloud.svg",
-    nameImg: "/cloudName.svg",
-  },
-  {
-    id: 2,
-    name: "appwrite",
-    img: "/app.svg",
-    nameImg: "/appName.svg",
-  },
+  // {
+  //   id: 1,
+  //   name: "cloudinary",
+  //   img: "/cloud.svg",
+  //   nameImg: "/cloudName.svg",
+  // },
+  // {
+  //   id: 2,
+  //   name: "appwrite",
+  //   img: "/app.svg",
+  //   nameImg: "/appName.svg",
+  // },
   {
     id: 3,
     name: "HOSTINGER",
     img: "/host.svg",
     nameImg: "/hostName.svg",
   },
-  {
-    id: 4,
-    name: "stream",
-    img: "/s.svg",
-    nameImg: "/streamName.svg",
-  },
+  // {
+  //   id: 4,
+  //   name: "stream",
+  //   img: "/s.svg",
+  //   nameImg: "/streamName.svg",
+  // },
   {
     id: 5,
     name: "docker.",
@@ -173,29 +156,29 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Full Stack Developer",
+    desc: "In my role, I specialize in developing custom WordPress websites using both template building plugins and custom code, including PHP, SASS, HTML, jQuery, and JavaScript. I handle the maintenance and development of legacy PHP websites, ensuring they remain functional and up-to-date. Additionally, I create custom responsive emails using MJML, and I have experience working with other CMS platforms like WiX, HubSpot, and Salesforce. This variety of skills allows me to build and maintain versatile, high-quality web solutions tailored to meet diverse client needs.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "12 week intensive full stack course",
+    desc: "This program was a great foundation, equipping me with the essential skills needed to start my journey in web development. I learned the core fundamentals, focusing on HTML/CSS, JavaScript, and SQL. The course emphasized understanding web development as a discipline rather than just chasing the latest trends. While it takes years of practice and ongoing learning to become an expert, this course has given me the tools and knowledge to begin contributing effectively in today’s web-first environment.",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Side Projects and Freelance Work",
+    desc: "I have worked on a variety of side projects and freelance work, including building a custom WordPress theme for a client, creating a personal portfolio website, and developing a web application for a local business. These projects have allowed me to apply my skills in a real-world setting, working directly with clients to understand their needs and deliver high-quality solutions. I have experience working with a range of technologies and I am always looking to expand my knowledge and learn new tools to improve my work",
     className: "md:col-span-2", // change to md:col-span-2
     thumbnail: "/exp3.svg",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "FrontEnd Developer Internship",
+    desc: "JPEG DAO, wix website, and other projects. I was responsible for developing and maintaining the projects website, ensuring it was up-to-date and functional. I worked closely with the design team to implement new features and improve the user experience, and I also collaborated with the marketing team to optimize the site for SEO. This role allowed me to gain valuable experience working in a professional environment and develop my skills as a front-end developer. I learned how to work with a team, manage my time effectively, and communicate with stakeholders to deliver successful projects.",
     className: "md:col-span-2",
     thumbnail: "/exp4.svg",
   },
@@ -205,13 +188,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/Fig369",
   },
   {
     id: 2,
     img: "/twit.svg",
+    link: "https://x.com/jayfigueroa_dev",
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/jayfig89/",
   },
 ];

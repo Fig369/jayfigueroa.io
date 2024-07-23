@@ -57,7 +57,8 @@ const Hero = () => {
           />
 
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-          Hi! I'm jay Figueroa, a Full Stack Developer based in Augusta GA.
+            Hi! I&#39;m Jay Fig, a Full Stack Developer based in Augusta GA.
+
           </p>
 
           <a href="#about">
